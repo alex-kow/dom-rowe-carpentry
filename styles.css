@@ -1,0 +1,235 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Roboto slab', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+
+/* Header styling */
+
+header{
+    background-color: #1E1E1E;
+    position: fixed;
+    width: 100%;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+.content a{
+    text-decoration: none;
+    color: #F3EFE0;
+}
+
+.logo{
+    font-size: 4rem;
+    margin-right: auto; /* puts the logo to the left */
+
+}
+
+.nav-list{
+   font-size: 1.5rem;
+   list-style: none;
+   display: flex;
+   gap: 4rem; /* adding space between the nav items on the right*/
+}
+
+header .mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    header .nav-list{
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 75%;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile li{
+        color: #F3EFE0;
+    }
+}
+
+/* Intro image section */
+
+.intro-image-container{
+    padding-top: 100px;
+    background-image: url("/Users/alexkowenicki/Projects/dom_row_carpentry/resources/images/intro-background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.intro-image-container h1{
+    color: #F3EFE0;
+}
+
+/* about me section */
+
+.about-dom{
+    min-height: 500px;
+    display: flex;
+    justify-content: space-evenly; /* horizontal spacing */
+    flex-wrap: wrap;
+    background-color: #F3EFE0;
+}
+
+.about-dom .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-dom .content,
+.about-dom .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* vertical spacing inside each */
+    align-items: center;
+    flex: 1 1 45%; 
+    min-width: 400px;  /* Prevents shrinking too far */
+    box-sizing: border-box;  
+    max-width: 400px; /* stops them from stretching too wide */
+}
+
+.image-container img{
+    height: 400px;
+    width: auto;
+}
+
+.about-dom .content{
+    color:#1E1E1E;
+    text-align: center;
+}
+
+/* Gallery section */
+
+.gallery{
+    background-color: #1E1E1E;
+    padding: 0;
+    margin: 0;
+    min-height: 350px;
+}
+
+.gallery-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-heading-mobile{
+    display: none;
+}
+
+
+.gallery-link{
+    color:#F3EFE0;
+    padding-right: 2rem;
+}
+
+.gallery-link:hover{
+    color: #C9A227
+}
+
+.gallery h2{
+    color:#F3EFE0;
+    margin: 0;
+    padding: 1.5rem;
+
+}
+
+.gallery .picture-gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.gallery .picture-gallery
+.picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:#F3EFE0;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.gallery .picture-gallery
+.picture img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+}
+
+.picture .span{
+    padding-bottom: 5px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color:#F3EFE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+    color:#1E1E1E
+}
+
+.instagram-link,
+.phone-number, 
+.email-address {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.instagram-link:hover,
+.phone-number:hover, 
+.email-address:hover {
+    text-decoration: underline;
+    color: #3A5A40;
+}
