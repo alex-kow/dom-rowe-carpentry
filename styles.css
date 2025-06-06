@@ -33,9 +33,11 @@ h2{
 
 header{
     background-color: #1E1E1E;
-    position: fixed;
+    position: sticky;
+    top:0;
     width: 100%;
 }
+ 
 
 header .content{
     display: flex;
@@ -61,6 +63,7 @@ header .content{
    display: flex;
    gap: 4rem; /* adding space between the nav items on the right*/
 }
+
 
 header .mobile{
     display: none;
@@ -141,7 +144,7 @@ header .mobile{
 
 .about-dom .content{
     color:#1E1E1E;
-    text-align: center;
+    
 }
 
 /* Gallery section */
@@ -220,12 +223,11 @@ header .mobile{
     transition: all 0.25s ease-in;
   }
 
-button{
-    border: none;
-    cursor: pointer;
-    color: #F3EFE0;
-    background: #F3EFE0;
-    transition: all .3s ease-in-out;
+button {
+    color: #F3EFE0 ;
+    background-color:#1E1E1E ;
+    font-size: 1.5rem;
+    border-color: #1E1E1E;
 }
 
 /* Footer */
@@ -264,4 +266,43 @@ footer p{
 .email-address:hover {
     text-decoration: underline;
     color: #3A5A40;
+}
+
+/* CONTACT PAGE */
+#map-and-form {
+    background-color: #1E1E1E;
+    display: flex;
+}
+
+#form-title {
+    color: #F3EFE0;
+}
+
+#contact-form {
+    width: 75%;
+    text-align: center;
+}
+
+
+#contact-blurb {
+    color: #1E1E1E;
+    background-color: #F3EFE0;
+    text-align: center;
+}
+
+#contact-blurb h1 {
+    padding-top: 4rem;
+    margin: 0px;
+}
+
+#contact-blurb p {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 0px;
+}
+
+#map{
+    height: auto;
 }
