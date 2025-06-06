@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F3EFE0;
+    border-radius: 100vw;
+    border: 0.25rem solid #1E1E1E;
+}
+
+
 body{
     font-family: 'Roboto slab', serif;
     margin: 0;
