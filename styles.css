@@ -1,3 +1,8 @@
+* {
+    font-family: 'Cabin', serif;
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -14,7 +19,7 @@
 
 
 body{
-    font-family: 'Roboto slab', serif;
+    font-family: 'Cabin', serif;
     margin: 0;
     padding: 0;
 }
@@ -62,6 +67,12 @@ header .content{
    list-style: none;
    display: flex;
    gap: 4rem; /* adding space between the nav items on the right*/
+}
+
+.nav-about:hover, 
+.nav-gallery:hover, 
+.nav-contact:hover {
+    color: #3A5A40;
 }
 
 
@@ -172,7 +183,7 @@ header .mobile{
 }
 
 .gallery-link:hover{
-    color: #C9A227
+    color: #3A5A40
 }
 
 .gallery h2{
@@ -305,4 +316,9 @@ footer p{
 
 #map{
     height: auto;
+}
+
+/* Contact form */
+form { 
+    color: #F3EFE0;
 }

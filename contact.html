@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Dom Rowe</title>
     <link href="resources/images/favicon.png" rel="icon" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,9 +19,9 @@
             <a class="logo" href="index.html">DR Carpentry</a>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#about-dom">About me</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="nav-about" href="#about-dom">About me</a></li>
+                    <li><a class="nav-gallery" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <nav class="mobile"> 
@@ -40,16 +42,46 @@
     </section>
     
 
-    <!--Map section-->
+  
     <section id="map-and-form">
+          <!--Map section-->
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331231.1632576847!2d-2.7845147254696547!3d49.56486344279228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480d20e4f4bfb3ed%3A0x990ad58a5d0d9899!2sGuernsey!5e0!3m2!1sen!2sgg!4v1749225795392!5m2!1sen!2sgg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <!--Contact form-->
         <div id="contact-form">
+        <form action="contact.html" method="post">
             <h2 id="form-title">Enquiry form</h2>
             <hr>
+            <section class="contact-name">
+                <label for="contact-name"> Name:  </label>
+                <br>
+                <input type="text" name="contact-name" id="contact-name" required>
+            </section>
+            <br>
+            <br>
+            <section class="email">
+                <label for="email-address"> Email address: </label>
+                <br>
+                <input type="email" name="email-address" id="email-address" required>
+            </section>
+            <br>
+            <br>
+            <section class="your-message">
+                <label for="your-message">Your Message: </label>
+                <br>
+                <textarea name="your-message" id="your-message" rows="10" cols="75" required></textarea>
+            </section>
+            <br>
+            <br>
+            <section class="submit-button">
+                <input type="submit" value="Submit">
+            </section>
+        </form>  
         </div>
     </section>
+
 
 
     <!--footer-->
