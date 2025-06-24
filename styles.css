@@ -114,7 +114,7 @@ header .mobile{
 /* Intro image section */
 
 .intro-image-container{
-    background-image: url("/Users/alexkowenicki/Projects/dom_row_carpentry/resources/images/intro-background-image.jpg");
+    background-image: url("resources/images/intro-background-image.jpg");
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
@@ -136,6 +136,7 @@ header .mobile{
 .about-dom{
     min-height: 500px;
     display: flex;
+    width:auto;
     justify-content: space-evenly; /* horizontal spacing */
     flex-wrap: wrap;
     background-color: #F3EFE0;
@@ -151,7 +152,7 @@ header .mobile{
 .about-dom .image-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* vertical spacing inside each */
+    justify-content: center; /* vertical spacing inside each */
     align-items: center;
     flex: 1 1 45%; 
     min-width: 400px;  /* Prevents shrinking too far */
@@ -166,6 +167,7 @@ header .mobile{
 
 .about-dom .content{
     color:#1E1E1E;
+    max-width: 500px;
     
 }
 
@@ -325,11 +327,13 @@ footer p{
     margin: 0px;
 }
 
-#map{
-    height: auto;
+#map iframe{
+    height: 100%;
+    border: 0;
 }
 
 /* Contact form */
 form { 
     color: #F3EFE0;
+    padding-bottom: 20px;
 }
